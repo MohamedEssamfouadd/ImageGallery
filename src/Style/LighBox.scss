@@ -1,0 +1,123 @@
+.Light-container{
+   position: fixed;
+   background-color: rgba(0, 0, 0, 0.719);
+   height: 100%;
+   width: 100%;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   overflow: hidden;
+   .img-container{
+    width:500px ;
+    height: fit-content;
+    width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  
+    img{
+      width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    .next{
+        position: absolute;
+        top: 50%;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        left: 700px;
+        border: none;
+
+    }
+    .previous{
+        position: absolute;
+        top: 50%;
+        right: 700px;
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;  
+    }
+   }
+   .response-img{
+    position: fixed;
+    width: 80%;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+}
+.fade-out{
+   opacity: 0;
+   transition: .2s ease-in-out;
+}
+.animation{
+    position: absolute;
+    background-color: #ffffff60;
+    min-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index:999 ;
+    .icon{
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      transform: translate(-40% ,-45%);
+        font-size: 40px;
+        animation:loader 3s linear infinite ;
+        
+        
+    }
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+ 
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media(min-width:700px) and (max-width:1000px){
+    .next{
+        left: 560px !important;
+    }
+    .previous{
+        right:  560px !important;
+    }
+}
+@media (max-width:700px) {
+    .img-container{
+        width: 300px !important;
+    
+    }
+    .next{
+        left: 295px !important;
+        font-size: 25px !important;
+    }
+    .previous{
+        right: 295px !important;
+        font-size: 25px !important;
+    }
+
+    
+}
+@media(max-width:1200px){
+    .response-img{
+        width: 100% !important;
+    }
+
+}
