@@ -43,7 +43,7 @@ const detectkey=(e)=>{
                if(data.i<=0){
                    setdata({img:image[data.i=image.length-1],i:data.i=image.length-1}) 
                 }
-            },2000)
+            },1200)
 
         }
         if (action=="prev-img") {
@@ -58,7 +58,7 @@ const detectkey=(e)=>{
                 if(data.i>=image.length-1){
                     setdata({img:image[data.i=0],i:data.i=0}) 
                 }
-            },2000)
+            },1200)
 
         }
 

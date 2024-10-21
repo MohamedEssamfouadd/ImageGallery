@@ -1,6 +1,13 @@
 .container-gallery{
     width: 80%;
-    margin:60px auto;
+    margin:50px auto;
+    h1{
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 3rem;
+        color: rgba(255, 0, 0, 0.562);
+        // color: rgba(0, 0, 255, 0.438);
+    }
 
     .photo-gallery{
         display: grid;

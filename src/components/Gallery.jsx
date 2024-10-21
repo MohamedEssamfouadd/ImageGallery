@@ -11,6 +11,7 @@ const Gallery = () => {
   return (
     <>
     <div className="container-gallery">
+      <h1>Images Gallery</h1>
         <div className="photo-gallery">
         {image.map((img,i)=>(
         <div key={i} className="images">
